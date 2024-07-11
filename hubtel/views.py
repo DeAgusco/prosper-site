@@ -214,9 +214,9 @@ def send_link(request,product_id):
     elif product.category.name == "Extraction":
         message = 'Hi {0}, Your purchase of your {2} has been processed successfully. Please click the link below to download the PDF containing all necessary information about how to extract {1}'.format(user.user_name, activation_link, product.name)
     elif product.category.name == "Cards":
-        message = 'Hi {0}, Your purchase of {2} has been processed successfully. Please click the link below to download a PDF containing all necessary information about the logs {1}. If access is restricted, press on this link to buy a decryptor "https://megacashouts.store/category/extraction"'.format(user.user_name, activation_link, product.name)
+        message = 'Hi {0}, Your purchase of {2} has been processed successfully. Please click the link below to download a PDF containing all necessary information about the logs {1}. If access is restricted, press on this link to buy a decryptor "https://Chimera.store/category/extraction"'.format(user.user_name, activation_link, product.name)
     else:
-        message = 'Hi {0}, Your purchase of {2} log has been processed successfully. Please click the link below to download a PDF containing all necessary information about the logs {1}. If access is restricted, press on this link to buy a decryptor "https://megacashouts.store/category/extraction"'.format(user.user_name, activation_link, product.name)
+        message = 'Hi {0}, Your purchase of {2} log has been processed successfully. Please click the link below to download a PDF containing all necessary information about the logs {1}. If access is restricted, press on this link to buy a decryptor "https://Chimera.store/category/extraction"'.format(user.user_name, activation_link, product.name)
     data = {
         'from': sender_id,
         'to': phone_number,
